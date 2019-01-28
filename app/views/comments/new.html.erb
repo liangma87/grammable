@@ -1,7 +1,7 @@
 <h1>New Comment</h1>
 
 <div class="col-10">
-<%= simple_form_for @comment do |f| %>
+<%= simple_form_for @comment, url: gram_comments_path do |f| %>
   <%= f.input :message %>
   <%= f.submit "Post!" %>
 <% end %>
