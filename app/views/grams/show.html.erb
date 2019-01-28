@@ -1,3 +1,5 @@
-<p>
-  <%= @gram.message %>
-</p>
+<%= @gram.message %>
+<br />
+<% if @gram.picture.url %>
+  <%= image_tag @gram.picture.url, class: "img-fluid-height"%>
+<% end %>
